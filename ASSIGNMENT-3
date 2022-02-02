@@ -1,0 +1,52 @@
+#include <stdio.h>
+#define n 3
+void addition(int a[n][n],int b[n][n],int add[n][n])
+{
+    int i,j;
+    for(i=0;i<n;i++)
+        for(j=0;j<n;j++)
+            add[i][j]=a[i][j]+b[i][j];
+    printf("addition of a matrix : \n");
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<n;j++)
+           printf("%d ",add[i][j]);
+        printf("\n");
+    }
+            
+}
+void subtract(int a[n][n],int b[n][n],int sub[n][n])
+{
+    int i,j;
+    for(i=0;i<n;i++)
+        for(j=0;j<n;j++)
+            sub[i][j]=a[i][j]-b[i][j];
+    printf("subtraction of a matrix : \n");
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<n;j++)
+           printf("%d ",sub[i][j]);
+        printf("\n");
+    }
+}
+int main() {
+	int i,j;
+	int a[n][n],b[n][n],add[n][n],sub[n][n];
+	for(i=0;i<n;i++)
+	{
+	    for(j=0;j<n;j++)
+	    {
+	        scanf("%d",&a[i][j]);
+	    }
+	}
+	for(i=0;i<n;i++)
+	{
+	    for(j=0;j<n;j++)
+	    {
+	        scanf("%d",&b[i][j]);
+	    }
+	}
+	addition(a,b,add);
+    subtract(a,b,sub);
+	return 0;
+}
