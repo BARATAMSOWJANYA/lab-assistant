@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include<string.h>
+int main(void) {
+	char str[50];
+	 int sl= 0;
+     int el = strlen(str) - 1;
+    while (el > sl)
+    {
+        if (str[sl++] != str[el--])
+        {
+            printf("Not a palindrome\n");
+            return;
+        }
+    }
+    printf("Palindrome");
+	return 0;
+}
