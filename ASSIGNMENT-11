@@ -1,0 +1,42 @@
+#include <stdio.h>
+struct student
+{
+    int sno;
+    char name[20],group[10];
+    float s1,s2,s3,tot,avg;
+}s[6];
+int main(void) {
+    int n,i;
+    printf("Enter n value : \n");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        printf("\nEnter Student sno: ");
+        scanf("%d",&s[i].sno);
+        printf("\nEnter Student name: ");
+        scanf("%s",s[i].name);
+         printf("\nEnter Student group: ");
+        scanf("%s",s[i].group);
+        printf("\nEnter Student s1,s2,s3 subject's marks: ");
+        scanf("%f%f%f",&s[i].s1,&s[i].s2,&s[i].s3);
+    }
+	for(i=0;i<n;i++)
+    {
+        s[i].tot=0;
+        s[i].tot=s[i].s1+s[i].s2+s[i].s3;
+    }
+    for(i=0;i<n;i++)
+    {
+        s[i].avg=s[i].tot/3;
+    }
+    for(i=0;i<n;i++)
+    {
+        printf("\n---------------------------------\n");
+        printf("\nsno. – %d", s[i].sno);
+        printf("\nName – %s", s[i].name);
+        printf("\nGroup – %s", s[i].group);
+        printf("\nTotal Marks – %f", s[i].tot);
+        printf("\nTotal Marks – %f", s[i].avg);
+    }
+	return 0;
+}
