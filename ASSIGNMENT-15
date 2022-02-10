@@ -1,0 +1,18 @@
+#include<stdio.h>  
+int main()
+{  
+int n;
+printf("Enter n value");
+scanf("%d",&n);
+int *p;
+p=&n;      
+p=p+1;        
+printf("Increment : %u \n",p);   
+p=p-1;        
+printf("Decrement : %u \n",p);
+p=p+5;        
+printf("Addition : %u \n",p);
+p=p-5;        
+printf("subtraction : %u \n",p);
+return 0;  
+}
