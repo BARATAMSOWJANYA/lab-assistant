@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(void) {
+	int a[5];
+	int *p=a;
+	int sum=0,i,x;
+	printf("enter a value");
+	for(i=0;i<5;i++)
+	scanf("%d",&a[i]);
+	for(i=0;i<5;i++)
+	{
+	    x=*(p+i);
+	    sum=sum+x;
+	    
+	}
+	printf("%d",sum);
+	return 0;
+}
