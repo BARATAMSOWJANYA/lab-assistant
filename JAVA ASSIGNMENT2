@@ -1,0 +1,19 @@
+import java.util.*;
+class program2
+{
+public static void main(String args[])
+{
+int sno,phno;
+String sname;
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter sno: ");
+sno=sc.nextInt();
+System.out.println("Enter your phno: ");
+phno=sc.nextInt();
+System.out.println("Enter your name: ");
+sname = sc.next();
+System.out.println("sno is: " + sno);
+System.out.println("phno is:" + phno);
+System.out.println("sname is: " + sname);
+}
+}
