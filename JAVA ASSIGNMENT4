@@ -1,7 +1,7 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
-class program4.java
+class program4
 {
     static int checkNumeric(String str)
     {
