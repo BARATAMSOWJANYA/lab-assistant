@@ -1,0 +1,27 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class Codechef
+{
+String name,dob;
+int mobnum;
+public Codechef(String name,String dob,int mobnum)
+{
+this.name=name;
+this.dob=dob;
+this.mobnum=mobnum;
+}
+void display()
+{
+System.out.println(name+" "+dob+" "+mobnum);
+}
+public static void main (String[] args) throws java.lang.Exception
+{
+Scanner s=new Scanner(System.in);
+String name=s.next();
+String dob=s.next();
+int mobnum=s.nextInt();
+Codechef cc=new Codechef(name,dob,mobnum);
+cc.display();
+}
+}
