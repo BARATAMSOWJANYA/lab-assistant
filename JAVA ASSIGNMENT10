@@ -1,0 +1,21 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class Overload
+{
+void area(float x, float y)
+{
+System.out.println("area of rectangle is "+x*y);
+}
+void area(double x)
+{
+double z = 3.14 * x * x;
+System.out.println("area of circle is "+z);
+}
+public static void main(String args[]) 
+{
+Overload obj = new Overload();
+obj.area(11,12);
+obj.area(2.5);
+}
+}
