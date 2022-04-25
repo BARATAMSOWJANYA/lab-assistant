@@ -1,0 +1,31 @@
+import java.util.*;
+class search
+{
+public static void main(String args[])
+{
+int n,i,flag=0,x;
+Scanner sc=new Scanner(System.in);
+System.out.println("enter array size");
+n=sc.nextInt();
+int ar[]=new int[n];
+System.out.println("enter array elements");
+for(i=0;i<n;i++)
+{
+ar[i]=sc.nextInt();
+}
+System.out.println("enter array elements");
+x=sc.nextInt();
+for(i=0;i<n;i++)
+{
+if(ar[i]==x)
+{
+flag++;
+break;
+}
+}
+if(flag==1)
+System.out.println("found");
+else
+System.out.println("not");
+}
+}
