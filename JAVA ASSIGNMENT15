@@ -1,0 +1,38 @@
+class Area
+{
+void  Area(int x)
+{
+int y;
+y= x*x;
+System.out.println("area of square = "+x);
+}
+void  Area(int x,int y)
+{
+int z;
+z= 2*(x+y);
+System.out.println("area of rectangle = "+z);
+}
+void  Area(float x,float y)
+{
+float z;
+z= 0.5f*x*y;
+System.out.println("area of triangle = "+z);
+}
+void  Area(float x)
+{
+float y;
+y= 22/7*(x*x);
+System.out.println("area of circle = "+y);
+}
+}
+class MO
+{
+public static void main(String args[])
+{
+Area m=new Area();
+m.Area(10);
+m.Area(5f);
+m.Area(15,5);
+m.Area(10f,5f);
+}
+}
