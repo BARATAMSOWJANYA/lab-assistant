@@ -1,0 +1,29 @@
+import java.util.*;
+class comsub
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+String s2,s1,s3;
+System.out.println("enter string1");
+s1=sc.next();
+System.out.println("enter string2");
+s2=sc.next();
+System.out.println("enter sub string");
+s3=sc.next();
+if(s1.compareTo(s2)>0)
+System.out.println("positive");
+else if(s1.compareTo(s2)==0)
+System.out.println("both are same");
+else
+System.out.println("negative");
+if(s1.contains(s3))
+{
+System.out.println("yes");
+}
+else
+{
+System.out.println("no");
+}
+}
+}
