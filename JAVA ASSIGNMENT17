@@ -1,0 +1,16 @@
+import java.util.*;
+class repcount
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+String s2,s1;
+System.out.println("enter string1");
+s1=sc.nextLine();
+s2=s1.replace('a','s');
+System.out.println(s2);
+String st[]=s1.split("_");
+int n=st.length;
+System.out.println(n);
+}
+}
