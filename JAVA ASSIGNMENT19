@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class countvowels
+{
+public static void main(String args[])
+{
+String str;
+int count=0;
+System.out.println("enter a string");
+Scanner sc=new Scanner(System.in);
+str=sc.nextLine();
+for(int i=0;i<str.length();i++)
+{
+char ch=str.charAt(i);
+if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
+{
+count++;
+}
+}
+System.out.println("number of vowels of the given string"+count);
+}
+} 
