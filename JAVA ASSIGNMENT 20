@@ -1,0 +1,38 @@
+import java.util.*;
+class doctor
+{
+void doctor_details()
+{
+System.out.println("1.dr.K.kishore,MBBS");
+System.out.println("2.dr.G.ramarao,MBBS");
+System.out.println("1.dr.T.vani,MBBS");
+}
+}
+class surgeon extends doctor
+{
+void surgeon_details()
+{
+System.out.println("1.dr.A.parvathi,ms(ortho)");
+System.out.println("2.dr.d.rani,ms(gyno)");
+System.out.println("3.dr.k.dharmachand,ms(cardio)");
+}
+}
+class patient extends surgeon
+{
+void patient_details()
+{
+System.out.println("patient name:ramana");
+System.out.println("patient age:24");
+System.out.println("city:rjy");
+}
+}
+class hospital
+{
+public static void main(String args[])
+{
+patient s=new patient();
+s.patient_details();
+s.doctor_details();
+s.surgeon_details();
+}
+}
